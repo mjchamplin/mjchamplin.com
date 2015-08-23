@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+html { 	-webkit-font-smoothing: antialiased; }
+
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {font: 18px Lato, Freesans, sans-serif;}
+
+
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+
+
+/* The Good Stuff
+-------------------------------------------------------------------------------*/
+body { background: #333;}
+
+.wrapper { width: 100%; max-width: 1200px; margin: 0 auto; background: #fff; margin-top: 3em; }
+
+header { padding: 2em; }
+	h1.name, h2.titles { display: inline; }
+	h1.name { text-transform: uppercase; font-weight: 700; margin-right: 1em;}
+	h2.titles { font-weight: 300; }
+	p.description { font-size: .8em; margin-top: 1.5em; max-width: 700px; color: #999; font-weight: 300; line-height: 1.6em}
+
+section.section { padding: 2em; }
+section.section.ledge { padding-bottom: 0;}
+
+section.skills { background-color: #336E7B; color: #fff; }
+section.skills p { font-weight: 300; line-height: 1.6em; }
+section.skills a { color: #90BAD4;}
+
+section.work { }
+section.work h2 { text-transform: uppercase; margin-bottom: 4em }
+section.work h3 { text-transform: uppercase; margin-bottom: 3em }
+section.map {}
+	section.map .map-image {  }
+	section.map .map-branding {  }
+
+section.jonesplan { background: #2C3E50; color: #fff; }
+section.flash-flood { background: #F9BF3B; }
+section.thoughts { background: #C0392B; }
+section.brands {} 
+	#brands { margin: 0 auto;}
+
+footer { background-color: #336E7B; color: #fff; padding: 2em; }
+	footer p { margin-top: 2em; font-weight: 300; line-height: 1.6em }
+	footer a { color: #b8fbff;}
+	.selfie { width: 100%; max-width: 200px; height: auto; margin: 0 auto; border-radius: 50%; }
+
+/* Classes */
+.twos { width: 100%;}
+.threes { width: 100%; margin-bottom: 2em; } 
+	.threes h2 { font-weight: 300; margin-bottom: 1em; padding-bottom: .5em; font-size: 1.1em; text-transform: uppercase; letter-spacing: 4px; text-align: center; border-bottom: 1px solid #ccc}
+.space { margin-top: 5em; }
+
+img { display: block; }
+.jump { margin-top: 4em;}
+.jump i { font-size: .7em}
+.light { color: #aaa; text-transform: none; font-weight: 300;}
+.also { margin: 4em auto 0;}
+.pad { padding: 3em;}
+.brand { margin: 0 auto; }
+.big { font-size: 1.2em; font-weight: normal; -webkit-font-smoothing: subpixel-antialiased;}
+.big a { color: #fff;}
+.big a:hover { color: #D8B46A;}
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) { }
+
+@media screen and (min-width: 1000px) {
+
+body { font-size: 18px; }
+section.section { padding: 3em 5em; }
+header { padding: 5em; }
+footer { padding: 5em; }
+.wrapper { margin-top: 5em; }
+
+.twos { width: 50%; float: left;}
+.threes {width: 33.333%; float: left;  padding: 0 2em; margin: 0;}
+
+.also {max-width: 60%;}
+.text-center { text-align: center;}
+
+/*section.skills div:first-child { padding-left: 0;}
+section.skills div:last-child { padding-right: 0;}*/
+
+ }
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}

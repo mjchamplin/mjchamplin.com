@@ -1,7 +1,4 @@
-#ignore all
-*
-
-#except...
+# Yep
+/*
 !index.html
-!assets/*
-!.gitignore
+!/assets
