@@ -82,6 +82,7 @@ img { display: block; }
 .big { font-size: 1.2em; font-weight: normal; -webkit-font-smoothing: subpixel-antialiased;}
 .big a { color: #fff;}
 .big a:hover { color: #D8B46A;}
+
 /* Media queries
 -------------------------------------------------------------------------------*/
 

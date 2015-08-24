@@ -12,11 +12,13 @@
 (function($){
 
 	/* trigger when page is ready */
-	$(document).ready(function (){
-	
+	$(document).ready(function(){
+ /* $('.your-class').slick({
+    setting-name: setting-value
+  });*/
+	$('.portfolio-flashflood').slick();
 
-	
-	});
+});
 	
 	
 
