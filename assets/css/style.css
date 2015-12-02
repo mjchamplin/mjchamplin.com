@@ -2,6 +2,8 @@
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 html { 	-webkit-font-smoothing: antialiased; }
 
+*:focus { outline: none; }
+
 /* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
 body {font: 18px Lato, Freesans, sans-serif;}
 
@@ -33,7 +35,9 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 -------------------------------------------------------------------------------*/
 body { background: #333;}
 
-.wrapper { width: 100%; max-width: 1200px; margin: 0 auto; background: #fff; margin-top: 3em; }
+.wrapper { width: 100%; /*max-width: 1200px;*/ margin: 0 auto; background: #fff; margin-top: 3em; }
+.inner { width: 100%; max-width: 1200px; margin: 0 auto; }
+.inner.case { padding: 2em }
 
 header { padding: 2em; }
 	h1.name, h2.titles { display: inline; }
@@ -41,7 +45,7 @@ header { padding: 2em; }
 	h2.titles { font-weight: 300; }
 	p.description { font-size: .8em; margin-top: 1.5em; max-width: 700px; color: #999; font-weight: 300; line-height: 1.6em}
 
-section.section { padding: 2em; }
+section.section { }
 section.section.ledge { padding-bottom: 0;}
 
 section.skills { background-color: #336E7B; color: #fff; }
@@ -57,6 +61,7 @@ section.map {}
 
 section.jonesplan { background: #2C3E50; color: #fff; }
 section.flash-flood { background: #F9BF3B; }
+	section.flash-flood .slick-slide { padding: 0 1em}
 section.thoughts { background: #C0392B; }
 section.brands {} 
 	#brands { margin: 0 auto;}
@@ -91,7 +96,7 @@ img { display: block; }
 @media screen and (min-width: 1000px) {
 
 body { font-size: 18px; }
-section.section { padding: 3em 5em; }
+.inner.case { padding: 3em 5em; }
 header { padding: 5em; }
 footer { padding: 5em; }
 .wrapper { margin-top: 5em; }
