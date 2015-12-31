@@ -35,20 +35,41 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 -------------------------------------------------------------------------------*/
 body { background: #333;}
 
-.wrapper { width: 100%; /*max-width: 1200px;*/ margin: 0 auto; background: #fff; margin-top: 3em; }
-.inner { width: 100%; max-width: 1200px; margin: 0 auto; }
+	/* Nav */
+.top { position: static; top: 0; width: 100%; color: #fff; padding: 1em}
+.top ul {list-style-type: none;}
+.top ul li {display: inline-block; margin-right: 1em;}
+.top ul li:last-child { margin-right: 0}
+.nav-wrapper { width: 100%; max-width: 1200px; margin: 0 auto;  }
+p.nav-label { display: inline-block; float: left; margin-right: 1em; font-weight: bold; }
+
+
+
+.wrapper { width: 100%; max-width: 1600px; margin: 0 auto; /*background: #fff;*/ margin-top: 3em; }
+.inner { width: 100%; margin: 0 auto; }
 .inner.case { padding: 2em }
 
-header { padding: 2em; }
+.main-header {
+	min-height: 60vh;
+	color: #fff;
+	max-width: 1200px;
+	padding: 0 0 2em 0
+}
+/*header { padding: 2em; }*/
 	h1.name, h2.titles { display: inline; }
 	h1.name { text-transform: uppercase; font-weight: 700; margin-right: 1em;}
 	h2.titles { font-weight: 300; }
-	p.description { font-size: .8em; margin-top: 1.5em; max-width: 700px; color: #999; font-weight: 300; line-height: 1.6em}
+	p.description { font-family: "Merriweather", serif; font-size: 1.8em; margin-top: 1.5em; color: rgba(256,256,256,.9); font-weight: 300; line-height: 1.6em}
+
+section p { margin-bottom: .8em; }
+section p:last-child { margin-bottom: 0 }
 
 section.section { }
 section.section.ledge { padding-bottom: 0;}
 
-section.skills { background-color: #336E7B; color: #fff; }
+section.hero { min-height: 200px; background: aqua}
+
+section.skills { background-color: #336E7B; color: #fff; padding: 2em; }
 section.skills p { font-weight: 300; line-height: 1.6em; }
 section.skills a { color: #90BAD4;}
 
@@ -59,8 +80,9 @@ section.map {}
 	section.map .map-image {  }
 	section.map .map-branding {  }
 
+section.kaytee { background: #2C8C5B; color: #fff }
 section.jonesplan { background: #2C3E50; color: #fff; }
-section.flash-flood { background: #F9BF3B; }
+section.flash-flood { background: #D66E55; }
 	section.flash-flood .slick-slide { padding: 0 1em}
 section.thoughts { background: #C0392B; }
 section.brands {} 
@@ -73,9 +95,15 @@ footer { background-color: #336E7B; color: #fff; padding: 2em; }
 
 /* Classes */
 .twos { width: 100%;}
-.threes { width: 100%; margin-bottom: 2em; } 
+.threes { width: 100%; max-width: 500px; margin: 0 auto 2em } 
 	.threes h2 { font-weight: 300; margin-bottom: 1em; padding-bottom: .5em; font-size: 1.1em; text-transform: uppercase; letter-spacing: 4px; text-align: center; border-bottom: 1px solid #ccc}
 .space { margin-top: 5em; }
+
+.case {}
+.case-inner {max-width: 800px; margin: 0 auto}
+.case-heading { margin-bottom: .6em; padding-bottom: .6em; border-bottom: 1px solid #fff}
+section.work .case-heading h3 { display: inline; font-weight: 600; text-transform: none; }
+.case-description { display: inline; margin-left: 1em; opacity: .7}
 
 img { display: block; }
 .jump { margin-top: 4em;}
@@ -96,13 +124,13 @@ img { display: block; }
 @media screen and (min-width: 1000px) {
 
 body { font-size: 18px; }
-.inner.case { padding: 3em 5em; }
-header { padding: 5em; }
+.inner.case { padding: 5em 5em; }
+.main-header { padding: 0 0 5em 0; }
 footer { padding: 5em; }
 .wrapper { margin-top: 5em; }
 
 .twos { width: 50%; float: left;}
-.threes {width: 33.333%; float: left;  padding: 0 2em; margin: 0;}
+.threes {width: 33.333%; float: left;  padding: 0 2em; margin: 0; max-width: 100%; }
 
 .also {max-width: 60%;}
 .text-center { text-align: center;}

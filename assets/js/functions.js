@@ -16,11 +16,9 @@
  /* $('.your-class').slick({
     setting-name: setting-value
   });*/
-	$('.portfolio-flashflood').slick({
-		centerMode: true,
-		centerPadding: '60px',
-	});
-
+	$('.portfolio-flashflood').slick({});
+	$('.portfolio-kaytee').slick({});
+		
 	$('.center').slick({
 		centerMode: true,
 		centerPadding: '60px',
